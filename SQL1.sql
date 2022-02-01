@@ -1,3 +1,8 @@
+/*Rodei o programa no pgAdmin. No caso, lá eu tive que
+colocar os comandos para criar as tabelas, logo, estou
+disponibilizando todo o código para que funcionasse para mim
+quando fui rodando os códigos pela primeira vez*/
+
 CREATE TABLE categories (
   id numeric PRIMARY KEY,
   name varchar
