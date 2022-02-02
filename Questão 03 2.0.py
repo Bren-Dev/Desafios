@@ -1,25 +1,8 @@
-"""
-Para verificar os while's, adicione: print (count), após os dois pontos do while.
-Coloquei um import random para caso queira testar vários números dentro do limite estabelecido no desafio. Porém, deixei 
-comentado para isto ficar a seu critério.
-Mude a constante de acordo com a preferência para testar se o código está correto.
-"""
-"""
-import random
+#Eu criei este segundo arquivo para a questão 3 porque fiquei em dúvida se alterava manualmente
+#ou deixava o usuário ir escolhendo as constantes à vontade. 
 
-const = random.randint(-32768, 32767)
 
-"""
-const = 10
-count = 0
-
-if const != 0:
-    print("Constant", const)
-
-if const == 1:
-    print("PLUSONE")
-
-elif const > 0:
+def plusone():
     print("PLUSONE")
     count = 1
     while True:
@@ -37,14 +20,11 @@ elif const > 0:
             count*=2
         
         if count == const:
-            break
-        
+            break           
 
-
-elif const < 0:
+def minusone():
     print("MINUSONE")
     count = -1
-
     while True:
         if count == const:
             break
@@ -62,6 +42,33 @@ elif const < 0:
 
         if count == const:
             break
+
+while True:
+    const = int(input("Insira a constante: "))
+    count = 0
+    while const != 0:
+        print("Constant", const)
+        break
+    if const == 0:
+        break
+    if const == 1:
+        print("PLUSONE")
+    while const > 1:
+        plusone()
+        break
+    while const < 0: 
+        minusone()
+        break
+
+
+
+        
+        
+        
+        
+
+
+
 
         
 
