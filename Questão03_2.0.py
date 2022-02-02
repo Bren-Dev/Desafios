@@ -6,7 +6,6 @@ def plusone():
     print("PLUSONE")
     count = 1
     while True:
-        print(count)
         if count == const:
             break    
 
