@@ -6,10 +6,11 @@ def plusone():
     print("PLUSONE")
     count = 1
     while True:
+        print(count)
         if count == const:
             break    
 
-        if count*2 > const:
+        if count*2 > const or count*2 == const:
             print("INC")
             count+=1
             if count == const:
@@ -50,10 +51,14 @@ while True:
         print("Constant", const)
         break
     if const == 0:
+        print("Programa finalizado!")
         break
     if const == 1:
         print("PLUSONE")
-    while const > 1:
+    if const == 2:
+        print("PLUSONE")
+        print("DUP")
+    while const > 2:
         plusone()
         break
     while const < 0: 

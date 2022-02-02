@@ -10,7 +10,10 @@ import random
 const = random.randint(-32768, 32767)
 
 """
-const = 10
+from os import O_RDWR
+
+
+const = 2
 count = 0
 
 if const != 0:
@@ -32,7 +35,7 @@ elif const > 0:
             if count == const:
                 break
         
-        if count < const and count*2 < const: 
+        if count < const: 
             print ("DUP")
             count*=2
         
