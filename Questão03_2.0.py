@@ -64,19 +64,3 @@ while True:
     while const < 0: 
         minusone()
         break
-
-
-
-        
-        
-        
-        
-
-
-
-
-        
-
-        
-        
-
