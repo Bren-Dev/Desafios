@@ -1,49 +1,49 @@
 list_verbs = ["casos", "porre", "corraem", "picel", "oficina", "param"]
 
-def tense():
-    if "o" in list_verbs[x][-1::] or "a" in list_verbs[x][-1::] or "om" in list_verbs[x][-2::] or  "os" in list_verbs[x][-2::] or  "am" in list_verbs[x][-2::] or "ons" in list_verbs[x][-3::]:
+def tense(x):
+    if list_verbs[x][-1::] in ["o", "a"] or list_verbs[x][-2::] in ["om", "os","am"]  or list_verbs[x][-3::] in "ons":
         return "present tense" 
 
-    elif "ai" in list_verbs[x][-2::] or "ais" in list_verbs[x][-3::] or "i" in list_verbs[x][-1::] or "aem" in list_verbs[x][-3::] or "aist" in list_verbs[x][-4::] or "aim" in list_verbs[x][-3::]:
+    elif  list_verbs[x][-2::] in "ai"  or list_verbs[x][-3::] in ["ais","aem", "aim"]  or list_verbs[x][-1::] in "i"   or list_verbs[x][-4::] in  "aist" :
         return "future tense"
 
-    elif "e" in list_verbs[x][-1::]  or "ei" in list_verbs[x][-2::] or "es" in list_verbs[x][-2::] or "em" in list_verbs[x][-2::]  or "im" in list_verbs[x][-2::] or "est" in list_verbs[x][-3::]:
+    elif list_verbs[x][-1::] in  "e"   or list_verbs[x][-2::] in ["ei", "es", "em", "im"]  or list_verbs[x][-3::] in  "est":
         return "past tense"
 
     else:
         return ""
 
 
-def person():
-    if "o" in list_verbs[x][-1::] or "ei" in list_verbs[x][-2::] or "ai" in list_verbs[x][-2::]:
+def person(x):
+    if list_verbs[x][-1::] in "o" or list_verbs[x][-2::] in ["ei", "ai"]:
         return "1st person"
-    elif "os" in list_verbs[x][-2::] or "es" in list_verbs[x][-2::] or "ais" in list_verbs[x][-3::]: 
+    elif list_verbs[x][-2::] in ["os", "es"]  or list_verbs[x][-3::] in "ais": 
         return "2nd person"
-    elif "a" in list_verbs[x][-1::] or "e" in list_verbs[x][-1::] or "i" in list_verbs[x][-1::]:
+    elif list_verbs[x][-1::] in ["a", "e", "i"]:
         return "3rd person"
-    elif "om" in list_verbs[x][-2::] or "em" in list_verbs[x][-2::]  or "aem" in list_verbs[x][-3::]:
+    elif list_verbs[x][-2::] in ["om", "em"] or  list_verbs[x][-3::] in "aem":
         return "4th person"
-    elif "ons" in list_verbs[x][-3::] or "est" in list_verbs[x][-3::] or "aist" in list_verbs[x][-4::]:
+    elif list_verbs[x][-3::] in ["ons", "est"]  or list_verbs[x][-4::] in "aist":
         return "5th person"
-    elif "am" in list_verbs[x][-2::] or "im" in list_verbs[x][-2::] or "aim" in list_verbs[x][-3::]:
+    elif list_verbs[x][-2::] in ["am", "im"] or list_verbs[x][-3::] in "aim" :
         return "6th person"
     else:
         return ""
 
 for x in range(len(list_verbs)):
     print("-"*10, x, list_verbs[x], "-"*10)
-    if  "o" in list_verbs[x][-1::] or "a" in list_verbs[x][-1::] or "e" in list_verbs[x][-1::] or "i" in list_verbs[x][-1::]:
+    if list_verbs[x][-1::] in ["o", "a", "e", "i"]:
         print("verb", list_verbs[x][:-1]+"en")
-    elif "ons" in list_verbs[x][-3::] or "est" in list_verbs[x][-3::] or "ais" in list_verbs[x][-3::] or  "aem" in list_verbs[x][-3::] or "aim" in list_verbs[x][-3::]:
+    elif list_verbs[x][-3::] in ["ons", "est", "ais", "aem", "aim"] :
         print("verb", list_verbs[x][:-3]+"en")
-    elif "om" in list_verbs[x][-2::] or  "os" in list_verbs[x][-2::] or  "am" in list_verbs[x][-2::] or "ei" in list_verbs[x][-2::] or "es" in list_verbs[x][-2::] or "em" in list_verbs[x][-2::] or "im" in list_verbs[x][-2::] or "ai" in list_verbs[x][-2::]:
+    elif list_verbs[x][-2::] in ["om", "os", "am", "ei", "es", "em", "im", "ai"] :
         print("verb", list_verbs[x][:-2]+"en")
-    elif "aist" in list_verbs[x][-4::]:
+    elif  list_verbs[x][-4::] in "aist":
         print("verb", list_verbs[x][:-4]+"en")
     else:
         print("not a verb case")
-    print(tense())
-    print(person())
+    print(tense(x))
+    print(person(x))
     
 
 
