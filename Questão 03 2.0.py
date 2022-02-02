@@ -1,6 +1,6 @@
 #Eu criei este segundo arquivo para a questão 3 porque fiquei em dúvida se alterava manualmente
 #ou deixava o usuário ir escolhendo as constantes à vontade. 
-
+#no caso, este é o arquivo no qual o usuário escolhe as constantes à vontade
 
 def plusone():
     print("PLUSONE")
