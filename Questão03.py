@@ -45,6 +45,7 @@ elif const < 0:
     count = -1
 
     while True:
+        print(count)
         if count == const:
             break
 
