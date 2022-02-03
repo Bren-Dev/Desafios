@@ -1,3 +1,8 @@
+#Pode ficar a vontade para alterar todos os elementos da lista em prol de testar
+#se o código está funcionando para todos os casos
+#por exemplo:
+# list_verbs = ["casos", "porre", "corraem", "picel", "param", "piceons", "oficina", "parons"]
+
 list_verbs = ["casos", "porre", "corraem", "picel", "oficina", "param"]
 
 def tense(x):
