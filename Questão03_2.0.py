@@ -39,16 +39,31 @@ def minusone():
         if count < const: 
             print ("INC")
             count += 1
+    
+
+        if const%2 != 0 and count*2 < const:
+            if (count*2) - 1 == const:
+                print("DUP")
+                count*=2
+            if count == const:
+                    break
+            while (count*2) + 1 != const:
+                print("INC")
+                count+=1
+                if (count*2) + 1 == const:
+                    break
+                 
 
         if count == const:
             break
-
+        
         if count*2 < const and const%2 == 0:
             while count != const/2:
                 print("INC")
                 count+=1
                 if count == const/2:
                     break
+        
 
 while True:
     const = int(input("Insira a constante: "))

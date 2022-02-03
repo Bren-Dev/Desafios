@@ -4,12 +4,12 @@ Coloquei um import random para caso queira testar vários números dentro do lim
 Mude a constante de acordo com a preferência para testar se o código está correto. Deixei 
 comentado para isto ficar a seu critério.
 """
-"""
-import random
+
+"""import random
 
 const = random.randint(-300, 300)
 """
-const = -21
+const = -101
 count = 0
 
 if const != 0:
@@ -45,13 +45,13 @@ elif const < 0:
     count = -1
 
     while True:
+        print(count)
         if count == const:
             break
 
         if count > const:
             print("DUP")
             count*=2
-            print(count)
 
         if count == const:
             break
@@ -62,6 +62,7 @@ elif const < 0:
     
 
         if const%2 != 0 and count*2 < const:
+            print(count)
             if (count*2) - 1 == const:
                 print("DUP")
                 count*=2
@@ -79,13 +80,10 @@ elif const < 0:
         
         if count*2 < const and const%2 == 0:
             while count != const/2:
-                print("INC")
                 count+=1
-                print(count)
                 if count == const/2:
                     break
         
-
 
         
         
