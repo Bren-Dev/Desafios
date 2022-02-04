@@ -1,14 +1,14 @@
 """
 Para verificar os while's, adicione: print (count), após os dois pontos do while.
-Coloquei um import random para caso queira testar vários números dentro do limite estabelecido no desafio. 
+
 Mude a constante de acordo com a preferência para testar se o código está correto. Deixei 
 comentado para isto ficar a seu critério.
 """
 
-"""import random
 
-const = random.randint(-300, 300)
-"""
+
+
+
 const = -101
 count = 0
 
